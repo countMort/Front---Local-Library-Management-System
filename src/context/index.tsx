@@ -8,6 +8,7 @@ export interface AppContextType {
   year?: number
   saveBooks: (books: Book[]) => void
   deleteBook: (id: number) => void
+  logout: () => void
 }
 export const AppContext = createContext<AppContextType | null>(null)
 
